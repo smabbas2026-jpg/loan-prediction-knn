@@ -1,0 +1,128 @@
+{
+  "best_params": {
+    "classifier__metric": "euclidean",
+    "classifier__n_neighbors": 25,
+    "classifier__weights": "uniform"
+  },
+  "best_cv_score": 0.8003092145949289,
+  "test_metrics": {
+    "accuracy": 0.8455284552845529,
+    "precision": 0.8235294117647058,
+    "recall": 0.9882352941176471,
+    "f1": 0.8983957219251337,
+    "roc_auc": 0.813467492260062,
+    "confusion_matrix": [
+      [
+        20,
+        18
+      ],
+      [
+        1,
+        84
+      ]
+    ],
+    "classification_report": {
+      "0": {
+        "precision": 0.9523809523809523,
+        "recall": 0.5263157894736842,
+        "f1-score": 0.6779661016949152,
+        "support": 38.0
+      },
+      "1": {
+        "precision": 0.8235294117647058,
+        "recall": 0.9882352941176471,
+        "f1-score": 0.8983957219251337,
+        "support": 85.0
+      },
+      "accuracy": 0.8455284552845529,
+      "macro avg": {
+        "precision": 0.8879551820728291,
+        "recall": 0.7572755417956656,
+        "f1-score": 0.7881809118100245,
+        "support": 123.0
+      },
+      "weighted avg": {
+        "precision": 0.8633372048006195,
+        "recall": 0.8455284552845529,
+        "f1-score": 0.8302955140491314,
+        "support": 123.0
+      }
+    }
+  },
+  "baseline_comparison": {
+    "model": "Logistic Regression",
+    "accuracy": 0.8536585365853658,
+    "roc_auc": 0.8588235294117647
+  },
+  "k_sensitivity": {
+    "k_values": [
+      1,
+      3,
+      5,
+      7,
+      9,
+      11,
+      13,
+      15,
+      17,
+      19,
+      21,
+      23,
+      25,
+      27,
+      29
+    ],
+    "train_accuracy": [
+      1.0,
+      0.8411405295315683,
+      0.8187372708757638,
+      0.8105906313645621,
+      0.8004073319755601,
+      0.7963340122199593,
+      0.7983706720977597,
+      0.8024439918533605,
+      0.8004073319755601,
+      0.8004073319755601,
+      0.8004073319755601,
+      0.7983706720977597,
+      0.8004073319755601,
+      0.7983706720977597,
+      0.7983706720977597
+    ],
+    "test_accuracy": [
+      0.7642276422764228,
+      0.8048780487804879,
+      0.8373983739837398,
+      0.8455284552845529,
+      0.8373983739837398,
+      0.8455284552845529,
+      0.8373983739837398,
+      0.8373983739837398,
+      0.8455284552845529,
+      0.8455284552845529,
+      0.8455284552845529,
+      0.8455284552845529,
+      0.8455284552845529,
+      0.8455284552845529,
+      0.8455284552845529
+    ]
+  },
+  "feature_names": [
+    "Credit_History_Score",
+    "TotalIncome_Log",
+    "LoanAmount_Risk",
+    "Debt_Burden",
+    "Dependents_Num",
+    "Gender_Female",
+    "Gender_Male",
+    "Married_No",
+    "Married_Yes",
+    "Education_Graduate",
+    "Education_Not Graduate",
+    "Self_Employed_No",
+    "Self_Employed_Yes",
+    "Property_Area_Rural",
+    "Property_Area_Semiurban",
+    "Property_Area_Urban"
+  ]
+}
